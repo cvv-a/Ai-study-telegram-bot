@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#101426">
+  <title>SMART AI</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div class="brand-mark">✦</div>
+      <div><div class="brand">SMART AI</div><div class="sub">Твой учебный помощник</div></div>
+      <div class="avatar" id="avatar">AI</div>
+    </header>
+
+    <section class="welcome">
+      <div class="eyebrow">ТВОЙ AI-ПОМОЩНИК</div>
+      <h1>Привет! Чем<br>помочь сегодня?</h1>
+      <p>Задавай вопросы, разбирай темы и учись проще.</p>
+    </section>
+
+    <section class="quick">
+      <button class="tile" data-prompt="Помоги решить домашнее задание и объясни решение по шагам.">
+        <span class="tile-icon purple">📚</span><span><b>Домашнее задание</b><small>Решить и объяснить</small></span><span class="arrow">›</span>
+      </button>
+      <button class="tile" data-prompt="Объясни мне сложную тему простыми словами.">
+        <span class="tile-icon blue">💡</span><span><b>Объяснить тему</b><small>Просто и понятно</small></span><span class="arrow">›</span>
+      </button>
+      <button class="tile" data-prompt="Я хочу разобрать задание по фотографии. Подскажи, как отправить фото.">
+        <span class="tile-icon pink">📷</span><span><b>Задание по фото</b><small>Разобрать условие</small></span><span class="arrow">›</span>
+      </button>
+    </section>
+
+    <section class="chat-card">
+      <div class="chat-heading"><span class="online"></span><b>Чат с SMART AI</b><span class="tag">ТЕСТ</span></div>
+      <div class="messages" id="messages">
+        <div class="bubble bot">Привет! Я SMART AI. Напиши, что нужно разобрать — помогу разобраться шаг за шагом. ✨</div>
+      </div>
+      <form id="chatForm" class="composer">
+        <input id="messageInput" autocomplete="off" placeholder="Напиши свой вопрос..." maxlength="2000">
+        <button type="submit" aria-label="Отправить">➤</button>
+      </form>
+      <div class="hint">Тестовый интерфейс. Подключение нейросети сделаем следующим шагом.</div>
+    </section>
+    <footer>SMART AI <span>•</span> Учись с интересом</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
